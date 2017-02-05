@@ -59,29 +59,49 @@
                     </div>
                 </div>
             </li>-->
-            <li data-row="2" data-col="1" data-sizex="1" data-sizey="4">
-                <header>GARTEN</header>
-                <div class="sheet">
-                    <div class="row">
-                        <div class="cell">
-                            <div data-type="switch" data-device="GartenLicht" class=""></div>
-                            <div data-type="label" class="">Licht</div>
-                            <div data-type="symbol" data-device="Eingangstuer" class="big"></div>
-                            <div data-type="label" class="">T&#252;r</div>
-                            <div data-type="label" data-device="OutTemp" data-part="2" data-fix="1" data-limits='[-73,10,23]' data-colors='["#6699FF","#AA6900","#FF0000"]' data-unit="%B0C%0A" class="bigger thin top-space-2x"></div>
-                            <div data-type="label" class="">Temperatur</div>
-                            <div data-type="label" class=" darker top-space">Heute</div>
-                            <div data-type="weather" data-device="AgroWeather" data-get="fc0_weatherDay" class=" big"></div>
-                            <div data-type="label" data-device="AgroWeather" data-get="fc0_weatherDay" class="narrow"></div>
-                            <div data-type="label" data-device="AgroWeather" data-get="fc0_tempMax" data-unit="%B0C%0A" class="large"></div>
-                            <div data-type="label" class="darker top-space">Morgen</div>
-                            <div data-type="weather" data-device="AgroWeather" data-get="fc1_weatherDay" class="big"></div>
-                            <div data-type="label" data-device="AgroWeather" data-get="fc1_weatherDay" class="narrow"></div>
-                            <div data-type="label" data-device="AgroWeather" data-get="fc1_tempMax" data-unit="%B0C%0A" class="large"></div>
-                        </div>
+            <li data-row="4" data-col="2" data-sizex="3" data-sizey="1">
+                <header>
+                    <div data-type="label" class="large">
+                        Abfall Zimmern
                     </div>
-                </div>
-            </li>
+                 </header>
+    <div data-type="symbol"
+        data-device="MuellterminDummy"
+        data-get="BioTonne"
+        data-icons='["fa-trash warn fa-spin","fa-trash warn"]'
+        data-on-colors='["SaddleBrown","SaddleBrown"]'
+        data-get-on='["0","2"]'
+        data-background-icon="fa-circle"
+        class="bigger inline" >
+    </div>
+    <div     data-type="symbol"
+        data-device="MuellterminDummy"
+        data-get="GelbeTonne"
+        data-icons='["fa-trash warn fa-spin","fa-trash warn"]'
+        data-on-colors='["yellow","yellow"]'
+        data-get-on='["0","2"]'
+        data-background-icon="fa-circle"
+        class="bigger inline" >
+    </div>
+    <div     data-type="symbol"
+        data-device="MuellterminDummy"
+        data-get="GrueneTonne"
+        data-icons='["fa-trash warn fa-spin","fa-trash warn"]'
+        data-on-colors='["green","green"]'
+        data-get-on='["0","2"]'
+        data-background-icon="fa-circle"
+        class="bigger inline" >
+    </div>
+    <div     data-type="symbol"
+        data-device="MuellterminDummy"
+        data-get="Restmuell"
+        data-icons='["fa-trash warn fa-spin","fa-trash warn"]'
+        data-on-colors='["black","black"]'
+        data-get-on='["0","2"]'
+        data-background-icon="fa-circle"
+        class="bigger inline" >
+    </div>
+</li>
             <li data-row="1" data-col="2" data-sizey="1" data-sizex="2">
                 <header>BAD</header>
                 <div class="sheet">
