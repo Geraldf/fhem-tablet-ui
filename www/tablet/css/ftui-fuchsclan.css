@@ -8,6 +8,6 @@
     color: white;
 }
 
-[data-device="MuellterminDummy"] {
+[data-device="MuellterminDummy"]  .fa_circle{
     background: gray;
 }
