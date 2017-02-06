@@ -1,0 +1,13 @@
+[data-type="pagetab"] .label {
+    padding-top: 0px;
+}
+
+.gridster li header,
+.card>header {
+    background: gray;
+    color: white;
+}
+
+[data-device="MuellterminDummy"] > .famultibutton.fa > .fa_circle{
+    background: #EBF0F2;
+}
