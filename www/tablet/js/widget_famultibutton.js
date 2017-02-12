@@ -9,7 +9,7 @@
 
 function depends_famultibutton() {
     if (!$.fn.famultibutton) {
-        return ["lib/fa-multi-button.min.js"];
+        return [ftui.config.basedir + "lib/fa-multi-button.min.js"];
     }
 }
 
@@ -504,6 +504,7 @@ var Modul_famultibutton = function () {
                     }
                 }
             });
+        
         // update from extra reading for colorize
         var oparm = ['offColor', 'onColor', 'onBackgroundColor', 'offBackgroundColor'];
         var selec = ['#fg', '#fg', '#bg', '#bg'];
@@ -515,8 +516,6 @@ var Modul_famultibutton = function () {
                     var val = elem.getReading(key).val;
                     if (ftui.isValid(val)) {
                         val = '#' + val.replace('#', '');
-                        console.log(val);
-
                         var faelem = elem.data('famultibutton');
                         if (faelem) {
                             // change color in options
